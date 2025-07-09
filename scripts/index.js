@@ -3,16 +3,16 @@
 
 let productos = [];
 let productoTienda;
-let carritocompra; // 💡 declarada arriba pero sin instanciar aún
+let carritocompra; 
 
 fetch('productos.json')
   .then(res => res.json())
   .then(data => {
     productos = data;
     productoTienda = new ProductoTienda(productos);
-    console.log("✅ productoTienda instanciado:", productoTienda);
-    carritocompra = new CarritodeCompras(); // ✅ instanciada después
-    console.log("✅ carritocompra instanciado con items:", carritocompra.items);
+   
+    carritocompra = new CarritodeCompras(); 
+    
     renderProductos(productos);
     renderFiltros();
   });
@@ -35,7 +35,7 @@ function renderProductos(productos) {
 
     const boton = document.createElement("button");
     boton.textContent = "Agregar al carrito";
-    boton.addEventListener("click", () => {console.log(`🖱️ Se hizo clic en agregar al carrito: ${prod.nombre}`);carritocompra.agregarProducto(prod.id)});
+    boton.addEventListener("click", () => {carritocompra.agregarProducto(prod.id)});
 
     div.appendChild(boton);
     contenedor.appendChild(div);
@@ -48,8 +48,6 @@ function renderProductos(productos) {
 function renderFiltros() {
   const contenedor = document.querySelector(".filtros");
   contenedor.innerHTML = "";
- // 👉 Log para verificar que productos tiene datos válidos
-  console.log("Productos disponibles:", productos);
 
 //RANGO
 // Input de rango
@@ -67,7 +65,7 @@ inputMax.placeholder = "Precio máximo";
 const btnRango = document.createElement("button");
 btnRango.textContent = "Aplicar Filtro";
 btnRango.classList.add("btn-aplicar-filtro");
-btnRango.onclick = filtrarPorRango; // tu función ya existe 💪
+btnRango.onclick = filtrarPorRango;
 
 // Agregarlos al contenedor
 contenedor.appendChild(inputMin);
@@ -76,8 +74,6 @@ contenedor.appendChild(btnRango);
 
 
   const categorias = [...new Set(productos.map(p => p.categoria?.trim()))].sort();
-  // 👉 Log para ver qué categorías se están extrayendo
-  console.log("Categorías generadas:", categorias);
 
   //TODOS
   const btnTodos = document.createElement("button");
