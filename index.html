@@ -1,49 +1,215 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <!-- Reemplazar por los datos que correspondan -->
-        <title>Programación I | Parcial 2 | APELLIDO/S</title>
+        <title>PastIvy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <link rel="stylesheet" href="styles.css" />
-        <script src="index.js"></script>
-    </head>
-    <body>
-        <header>
-            <!-- Reemplazar por los datos que correspondan -->
-            <h1>Programación I | Parcial 2 | APELLIDO/S | Mi carrito</h1>
-        </header>
-        <main>
-            <!-- Este es un ejemplo de contenedor de carrito -->
-            <div id="carrito">
-                <p><span>0</span> ítems agregados</p>
-                <p>$<span>0</span> es el total</p>
-                <!-- Estos filtros pueden ser links, botones, menu desplegable. Sugiero generarlos dinamicamente -->
-                <p>Filtrar por <a href="#">Categoría 1</a> | <a href="#">Categoría 2</a> | <a href="#">Categoría 3</a></p>
-                <button>Ver carrito</button>
-            </div>
-            <h2>Productos</h2>
-            
-            <div id="productos">
-                <!-- Aca irian los productos -->
-            </div>
-
-        </main>
-
-        <footer>
-            <ul>
-                <li>Profesor Fabrizio Carlassara</li>
-                <li>
-                    <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
-                </li>
-                <li>Programación 1</li>
-                <li>
-                    <!-- Reemplazar por el link del repositorio de GitHub -->
-                    <a href="#">URL del repo de GitHub</a>
-                </li>
-            </ul>
-        </footer>
         
-    </body>
+        <link rel="shortcut icon" href="imagenes/logo/favicon.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+  
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+        crossorigin="anonymous">  
+        
+        <link rel="stylesheet" href="styles/style.css" />
+        
+    
+    </head>
+    <body class="text-center">
+        <header>
+<!-- Reemplazar por los datos que correspondan -->
+  <h1 class="nombre d-none  fw-bold  text-white">PastIvy</h1>
+
+    <nav class="navbar navbar-expand-lg p-0 fijo sticky-top px-3">
+      <div class="container p-0  w-100">
+        <div class="navbar-brand nombre fw-bold d-lg-none text-white">PastIvy</div>
+        <figure class="d-none d-lg-flex">
+          <img src="imagenes/logo/logo.png" alt="Logo del emprendimiento Pastivy" class="w-100 m-0 p-0">
+        </figure>
+
+        <button class="navbar-toggler bg-white text-danger" data-bs-toggle="collapse" data-bs-target="#menu">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" collapse navbar-collapse  " id="menu">
+
+      <ul class="navbar-nav ms-auto" >
+        <li class="nav-item">
+          <a class="nav-link text-white  border-bottom border-danger" href="#postres" >Productos</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-white  border-bottom border-danger" href="#contacto" >Contacto</a>
+        </li>
+      </ul>
+        
+         </div>
+    </div>
+  </nav>
+
+ 
+        </header>
+
+    <div class="container p-0 " >
+      <div id="micarousel" class="carousel slide"  data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+          
+
+          <div class="carousel-item active">
+
+            <figure class="m-0">
+              <img src="imagenes/banners/portada.jpg" alt="Promoción del nuevo producto Carrot Cake" class="img-fluid">
+            </figure>
+
+          </div>
+
+          <div class="carousel-item">
+
+            <figure class="m-0">
+              <img src="imagenes/banners/oferta.png" alt="Oferta de alfajores personalizados" class="img-fluid">
+            </figure>
+
+          </div>
+
+          <div class="carousel-item">
+
+            <figure class="m-0">
+              <img src="imagenes/banners/envio.png" alt="Descuento en el envio de compra" class="img-fluid">
+            </figure>
+
+          </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#micarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#micarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+
+      
+    </div>
+  </div>
+    <div id="carrito" onclick="verCarrito()" style="cursor: pointer;" class="container bg-white">
+      <p class="pt-3">Productos: <span id="carritoItems">0</span> | Total: $<span id="carritoTotal">0</span></p>
+      <button type="button" class="btn btn btn-outline-danger my-2 " data-bs-toggle="modal" data-bs-target="#modalCarrito">🛒 Ver Carrito</button>  
+    </div>
+  <!-- Estos filtros pueden ser links, botones, menu desplegable. Sugiero generarlos dinamicamente -->
+  
+  <section class="filtros container bg-white text-center justify-content-center">
+    <div id="filtros-precio">
+  <input type="number" id="precio-minimo" placeholder="Precio mínimo">
+  <input type="number" id="precio-maximo" placeholder="Precio máximo">
+  <button id="btn-aplicar-filtro">Aplicar Filtro</button>
+</div>
+  </section>
+
+  
+  <main class="container bg-white container py-5">
+    <section>
+      <h2 id="postres" class="border-bottom border-top border-danger p-2">Productos</h2>
+    <!-- Productos -->
+
+    <div id="contenedor-productos" class="contenedorproducto container"></div>
+    </section>
+
+    <section class="py-5">
+          <h2 id="contacto" class="border-danger border-bottom border-top p-2">Contacto</h2>
+          <p class="fw-bold text-danger fst-italic">¡Sígueme en mis redes sociales para ver mis últimas creaciones y realizar tus 
+            pedidos personalizados!</p>
+
+            <div class="container">
+
+              <div class="row">
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="m-2">
+                <a href="https://www.instagram.com/pasti_ivy/" target="_blank"><img src="imagenes/iconos/instagram.png" alt="Instagram" class="w-auto m-2 "></a>
+                <p>Instagram</p>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="m-2">
+                <a href="https://www.tiktok.com/@pastivy?_t=ZM-8wrye5kdO2X&_r=1" target="_blank"><img src="imagenes/iconos/tiktok.png" alt="Tiktok" class="w-auto m-2 "></a>
+                <p>TikTok</p>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-4">
+                <div class="m-2">
+                <a href="https://wa.me/5491151633366" target="_blank"><img src="imagenes/iconos/wasa.png" alt="WhatsApp" class="w-auto m-2 "></a>
+                <p>WhatsApp</p>
+                </div>
+              </div>
+             </div>
+            </div>
+          
+        </section>
+</main>
+
+<!-- Modal del Carrito -->
+<div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 "> 
+
+        <div class="modal fade" id="modalCarrito">
+          <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title h2 text-danger">Tu Carrito</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body container">
+                <div id="contenidoCarrito"></div>
+                <div id="totalCarrito"></div>
+                <button id="btnVaciarCarrito" class="btn btn btn-outline-danger my-2">Vaciar carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+<div id="notificaciones" class="notificaciones-container"></div>
+
+<footer>
+  <ul>
+    <li>Profesor Fabrizio Carlassara</li>
+    <li>
+      <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
+    </li>
+    <li>Programación 1</li>
+    <li>
+    <!-- Reemplazar por el link del repositorio de GitHub -->
+    <a href="#">URL del repo de GitHub</a>
+    </li>
+  </ul>
+</footer>
+        
+  <!--  Scripts -->
+  <script src="scripts/index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
+  crossorigin="anonymous"></script>
+</body>
 </html>

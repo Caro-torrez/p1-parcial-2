@@ -1,10 +1,256 @@
 [
     {
         "id": 1,
-        "nombre": "Producto",
-        "descripcion": "Descripción del producto",
-        "precio": 0,
-        "imagen": "images/producto-de-ejemplo.jpg",
-        "categoría": "Nombre de la categoría"
+        "nombre": "Alfajores",
+        "descripcion": "Docena de alfajores de maicena con coco rayado.",
+        "stock": 10,
+        "precio": 10990,
+        "imagen": "imagenes/productos/alfajores.png",
+        "categoria": "Alfajores"
+    },
+    {
+        "id": 2,
+        "nombre": "Torta Roger",
+        "descripcion": "Torre de waffles artesanales con capas de dulce de leche entre cada nivel. Coronado con un esponjoso merengue dorado y levemente tostado.",
+        "stock": 5,
+        "precio": 12500,
+        "imagen": "imagenes/productos/postre3.jpg",
+        "categoria": "Tartas"
+    },
+    {
+        "id": 3,
+        "nombre": "Mini Lemon Pie",
+        "descripcion": "Tartaleta individual con crema de limón suave y fresca con una cubierta de merengue.",
+        "stock": 2,
+        "precio": 2710,
+        "imagen": "imagenes/productos/lemonpie.jpg",
+        "categoria": "Minis"
+    },
+    {
+        "id": 4,
+        "nombre": "Bavaroise",
+        "descripcion": "Mousse de maracuyá con un toque de menta. Decorado con una delicada tuile dorada crocante y una hoja de menta fresca.",
+        "stock": 5,
+        "precio": 9500,
+        "imagen": "imagenes/productos/postre2.jpg",
+        "categoria": "Minis"
+    },
+    {
+        "id": 5,
+        "nombre": "Pionono de chocolate",
+        "descripcion": "Pionono de chocolate, relleno con mousse, dulce de leche y coco. Decorado con copetes de crema chantilly y un glaseado de chocolate.",
+        "stock": 3,
+        "precio": 13400,
+        "imagen": "imagenes/productos/postre7.png",
+        "categoria": "Piononos"
+    },
+     {
+        "id": 6,
+        "nombre": "Torta de Queso",
+        "descripcion": "Torta de queso elaborada con queso crema y crema de leche, que logra una textura sedosa y un sabor suave y equilibrado.",
+        "stock": 2,
+        "precio": 24500,
+        "imagen": "imagenes/productos/torta_de_queso.jpg",
+        "categoria": "Tortas"
+    },
+     {
+        "id": 7,
+        "nombre": "Budín Marmolado",
+        "descripcion": "Budín mixto de vainilla y chocolate en un suave marmolado, decorado con chocolate y almendras.",
+        "stock": 1,
+        "precio": 12130,
+        "imagen": "imagenes/productos/marmolado.jpg",
+        "categoria": "Budín"
+    },
+     {
+        "id": 8,
+        "nombre": "Alfajores Bañados",
+        "descripcion": "Alfajores con tapas de chocolate y relleno de dulce de leche bañados en chocolate.",
+        "stock": 14,
+        "precio": 6500,
+        "imagen": "imagenes/productos/alfajores_bañados_chocolate.png",
+        "categoria": "Alfajores"
+    },
+      {
+        "id": 9,
+        "nombre": "Scones",
+        "descripcion": "Docena de scones ingleses son galletitas blandas y dulces.",
+        "stock": 10,
+        "precio": 12500,
+        "imagen": "imagenes/productos/scones.png",
+        "categoria": "Galletas"
+    },
+    {
+        "id": 10,
+        "nombre": "Browni",
+        "descripcion": "Browni rectangular decorado con maní y crema",
+        "stock": 5,
+        "precio": 16500,
+        "imagen": "imagenes/productos/browni.png",
+        "categoria": "Brownis"
+    },
+    {
+        "id": 11,
+        "nombre": "Pastafrola",
+        "descripcion": "Tarta artesanal con relleno de membrillo y clásico enrejado de masa dorada y una riquisima base crujiente de pasta quebrada.",
+        "stock": 2,
+        "precio": 15000,
+        "imagen": "imagenes/productos/tarta_de_galea.png",
+        "categoria": "Tartas"
+    },
+     {
+        "id": 12,
+        "nombre": "Cupcake de Naranja",
+        "descripcion": "Cupcakes de naranja con glaseado cremoso blanco y trozos de naranja confitada, con sabor cítrico intenso y textura esponjosa.",
+        "stock": 5,
+        "precio": 5890,
+        "imagen": "imagenes/productos/muffins_de_naranja.jpg",
+        "categoria": "Cupcakes"
+    },
+     {
+        "id": 13,
+        "nombre": "Brownis Pirineos",
+        "descripcion": "Browni intenso de chocolate decorado con una capa cremosa de dulce de leche y cobertura de merengue.",
+        "stock": 3,
+        "precio": 3690,
+        "imagen": "imagenes/productos/browni_redondo.jpg",
+        "categoria": "Brownis"
+    },
+     {
+        "id": 14,
+        "nombre": "Budín de Naranja",
+        "descripcion": "Budín esponjoso con el sabor cítrico natural de la naranja decorado con un glaseado y pedazos de naranja en la parte superior.",
+        "stock": 1,
+        "precio": 10800,
+        "imagen": "imagenes/productos/budin_de_naranja.jpg",
+        "categoria": "Budín"
+    },
+      {
+        "id": 15,
+        "nombre": "Flan",
+        "descripcion": "Un riquisimo flan de vainilla casero bañado en caramelo.",
+        "stock": 6,
+        "precio": 9500,
+        "imagen": "imagenes/productos/flan.jpg",
+        "categoria": "Flan"
+    },
+{
+        "id": 16,
+        "nombre": "Pionono de Vainilla",
+        "descripcion": "pionono de vainilla esponjoso y suave, relleno con dulce de leche y cubierto con una capa de chocolate, decorado con crema chantilly",
+        "stock": 8,
+        "precio": 11500,
+        "imagen": "imagenes/productos/postre5.jpg",
+        "categoria": "Piononos"
+    },
+     {
+        "id": 17,
+        "nombre": "Torta de Chocolate",
+        "descripcion": "Torta de chocolate con una textura densa y húmeda, cubierta con un glaseado de chocolate cremoso y coronada con hilos de caramelo.",
+        "stock": 3,
+        "precio": 14000,
+        "imagen": "imagenes/productos/postre1.jpg",
+        "categoria": "Tortas"
+    },
+    {
+        "id": 18,
+        "nombre": "Mini tartas",
+        "descripcion": "Mini tarta con base crocante, decorado con crema suave y fritillas o duraznos fresacos. Estos tambien pueden ser mixtos.",
+        "stock": 9,
+        "precio": 9600,
+        "imagen": "imagenes/productos/Tartaletas.png",
+        "categoria": "Minis"
+    },
+    {
+        "id": 19,
+        "nombre": "Chocoflan",
+        "descripcion": "Una combinación de flan casero de vainilla sobre un esponjoso bizcochuelo de chocolate, bañado en caramelo.",
+        "stock": 3,
+        "precio": 10500,
+        "imagen": "imagenes/productos/chocoflan.jpg",
+        "categoria": "Flan"
+    },
+     {
+        "id": 20,
+        "nombre": "Carrot Cake",
+        "descripcion": "Bizcochuelo húmedo de zanahoria con un toque de canela, cubierto por un suave frosting de queso crema.",
+        "stock": 2,
+        "precio": 12400,
+        "imagen": "imagenes/productos/carrot_cake.jpg",
+        "categoria": "Tortas"
+    },
+    {
+        "id": 21,
+        "nombre": "Mini Pastafrola",
+        "descripcion": "Tarta con base de masa crocante y un relleno a elección (batata o membrillo), finalizandolo con un enrejado de la misma masa crocante",
+        "stock": 6,
+        "precio": 9800,
+        "imagen": "imagenes/productos/minipastafrola.jpg",
+        "categoria": "Minis"
+    },
+     {
+        "id": 22,
+        "nombre": "Chocotorta",
+        "descripcion": "Torta clásica con capas de galletitas de chocolate húmedas, con relleno de dulce de leche y queso crema.",
+        "stock": 6,
+        "precio": 24550,
+        "imagen": "imagenes/productos/chocotorta.jpg",
+        "categoria": "Tortas"
+    },
+     {
+        "id": 23,
+        "nombre": "Imperio Ruso",
+        "descripcion": "Una torta casera de meregue francés con relleno de manteca con almendras.",
+        "stock": 2,
+        "precio": 20500,
+        "imagen": "imagenes/productos/torta_imperio_ruso.png",
+        "categoria": "Tortas"
+    },
+     {
+        "id": 24,
+        "nombre": "Brazo Gitano Oreo",
+        "descripcion": "Pionono casero con relleno de galletitas de crema y galletas oreo.",
+        "stock": 3,
+        "precio": 8590,
+        "imagen": "imagenes/productos/brazo.jpg",
+        "categoria": "Piononos"
+    },
+     {
+        "id": 25,
+        "nombre": "Tarta de Coco",
+        "descripcion": "Una tarta de masa crocante con relleno de dulce de leche y una cobertura de coco rallado horneado",
+        "stock": 5,
+        "precio": 10200,
+        "imagen": "imagenes/productos/tarta_de_coco.jpg",
+        "categoria": "Tartas"
+    },
+    {
+        "id": 26,
+        "nombre": "Cheasecake de Limón",
+        "descripcion": "Base crocante con relleno cremoso y un suave toque cítrico de limón",
+        "stock": 2,
+        "precio": 19860,
+        "imagen": "imagenes/productos/cheasecake_de_limon.jpg",
+        "categoria": "Tartas"
+    },
+    {
+        "id": 27,
+        "nombre": "Kit de Alfajores",
+        "descripcion": "12 unidades de alfajores de 4 tipos de gustos a elección (chocolate blanco o negro, maicena y coco) con un relleno de dulce de leche.",
+        "stock": 15,
+        "precio": 13950,
+        "imagen": "imagenes/productos/alfajoresartesanales.jpg",
+        "categoria": "Alfajores"
+    },
+    {
+        "id": 28,
+        "nombre": "Tarta de Frutilla",
+        "descripcion": "Con una base de masa crocante, una capa suave de crema chantilly y decorado por frutillas frescas",
+        "stock": 2,
+        "precio": 20000,
+        "imagen": "imagenes/productos/tarta-de-frutilla.jpg",
+        "categoria": "Tartas"
     }
+
+
 ]
