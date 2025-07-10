@@ -1,31 +1,44 @@
-
-
 body{
     background-color: #ffeeaf;
-    margin-top: 80px;
-   
 }
-.fijo{
-    background-color: #990000;
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-}
-
 
 .navbar{
     background-color: #990000;
-    
-}
-
-nav{
-    max-height: 80px;
+    padding: 2rem;
 }
 
 footer{
     background-color: #990000;
-   
+    padding: 2rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    color: white;
+}
+
+footer ul li {
+    font-family: 'DM Serif Text';
+    font-size: 1.4em;
+    line-height: 1.5;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul li a {
+    font-family: 'DM Serif Text';
+    font-size: 1em;
+    text-decoration: none;
+    color: #D0E0E3;
+}
+
+footer ul li a:hover {
+    color: #a2c4c9;
 }
 
 
@@ -136,12 +149,39 @@ li{
     width: 95%;
 }
 
-@media screen and (min-width:768px){
-    body{
-    margin-top: 108px;
+.item-carrito{
+    margin: 2rem;
+    font-size: 1.3rem;
 }
 
-    .contenedorproducto{
+.item-carrito button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border-radius: 20%;
+    border: none;
+    background-color: #990000;
+    color: white;
+}
+
+#totalCarrito{
+    background-color: rgb(255, 179, 158);
+    font-size: 1.6rem;
+    color: black;
+    margin: 0.5rem;
+}
+
+#btnVaciarCarrito{
+    font-size: 1.3rem;
+}
+
+#btnComprar{
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+@media screen and (min-width:768px){
+.contenedorproducto{
         grid-template-columns: 1fr 1fr;
     }
     #contenedor-productos .descripcion{
@@ -150,20 +190,17 @@ li{
     margin-bottom: 1rem;
     padding: 0.5rem;
     padding-top: 0;
-    
-
-}
+    }
+     footer ul {
+        flex-direction: row;
+    }
 }
 
 
 
 @media screen and (min-width:992px){
-    body{
-        margin-top: 152px;
-    
-    }
     nav{
-        max-height: 152px;
+        max-height: 170px;
     }
     .contenedorproducto{
         grid-template-columns: 1fr 1fr 1fr;
