@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <!-- Reemplazar por los datos que correspondan -->
         <title>PastIvy</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
         
-        <link rel="shortcut icon" href="imagenes/logo/favicon.png" />
+        <link rel="shortcut icon" href="imagenes/logo/favicon.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
         rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
         crossorigin="anonymous">  
         
-        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/style.css">
         
     
     </head>
@@ -33,7 +33,7 @@
 <!-- Reemplazar por los datos que correspondan -->
   <h1 class="nombre d-none  fw-bold  text-white">PastIvy</h1>
 
-    <nav class="navbar navbar-expand-lg p-0 fijo sticky-top px-3">
+    <nav class="navbar navbar-expand-lg p-0  px-3">
       <div class="container p-0  w-100">
         <div class="navbar-brand nombre fw-bold d-lg-none text-white">PastIvy</div>
         <figure class="d-none d-lg-flex">
@@ -113,13 +113,7 @@
     </div>
   <!-- Estos filtros pueden ser links, botones, menu desplegable. Sugiero generarlos dinamicamente -->
   
-  <section class="filtros container bg-white text-center justify-content-center">
-    <div id="filtros-precio">
-  <input type="number" id="precio-minimo" placeholder="Precio mínimo">
-  <input type="number" id="precio-maximo" placeholder="Precio máximo">
-  <button id="btn-aplicar-filtro">Aplicar Filtro</button>
-</div>
-  </section>
+  <div class="filtros container bg-white text-center justify-content-center"></div>
 
   
   <main class="container bg-white container py-5">
@@ -166,10 +160,6 @@
 </main>
 
 <!-- Modal del Carrito -->
-<div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 "> 
-
         <div class="modal fade" id="modalCarrito">
           <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
             <div class="modal-content">
@@ -180,27 +170,24 @@
               <div class="modal-body container">
                 <div id="contenidoCarrito"></div>
                 <div id="totalCarrito"></div>
+                <button id="btnComprar" class="btn btn btn-outline-danger my-2">Comprar</button>
                 <button id="btnVaciarCarrito" class="btn btn btn-outline-danger my-2">Vaciar carrito</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-    </div>
-</div>
-<div id="notificaciones" class="notificaciones-container"></div>
+     
 
 <footer>
   <ul>
     <li>Profesor Fabrizio Carlassara</li>
     <li>
-      <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
+      <a href="mailto:fabrizio.carlassara@davinci.edu.ar" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
     </li>
     <li>Programación 1</li>
     <li>
     <!-- Reemplazar por el link del repositorio de GitHub -->
-    <a href="#">URL del repo de GitHub</a>
+    <a href="#">Repo de GitHub</a>
     </li>
   </ul>
 </footer>
